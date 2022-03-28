@@ -20,3 +20,19 @@ html {
 
 /* Applied Styles */
 
+body {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+header {
+  grid-column: 2 / 3;
+}
+
+section.sidebar {
+  grid-column: 1 / 2;
+}
+
+main {
+  grid-column: 2 / 3;
+}
