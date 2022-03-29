@@ -90,8 +90,13 @@ header {
 }
 
 .header-top {
+  align-items: center;
   display: flex;
-  margin: 16px 0 48px 32px;
+  margin: 24px 0 48px 32px;
+}
+
+.header-top img {
+  margin-right: 16px;
 }
 
 .header-top form {
@@ -102,12 +107,36 @@ header {
   background-color: var(--light-gray);
   border: none;
   border-radius: 10px;
-  padding: 4px 0;
-  width: 85%;
+  padding: 6px 0;
+  text-indent: 8px;
+  width: 90%;
+}
+
+.user-info {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+}
+
+.avatar-small {
+  width: 50px;
+  height: auto;
+}
+
+.username {
+  font-weight: bold;
+  margin-right: 64px;
+}
+
+.avatar-large {
+  width: 100px;
+  height: auto;
 }
 
 .admin-controls {
+  align-items: center;
   display: flex;
+  margin-bottom: 16px;
   margin-left: 32px;
   gap: 24px;
 }
@@ -123,8 +152,8 @@ header {
   color: var(--main-white);
   font-size: 1rem;
   font-weight: bold;
-  max-height: 40px;
   min-width: 100px;
+  padding: 0.70em;
 }
 
 .user-button:hover {
