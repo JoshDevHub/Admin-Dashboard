@@ -25,6 +25,7 @@ html {
   --light-blue: hsl(201,78%,46%);
   --main-white: hsl(0,0%,100%);
   --dark-blue: hsl(201,78%,30%);
+  --light-gray: hsl(214,31%,91%);
 }
 
 body {
@@ -48,7 +49,7 @@ main {
   grid-area: 2 / 2 / 3 / 3;
 }
 
-.header-logo-container {
+.heading-logo-container {
   align-items: center;
   display: flex;
   margin: 16px 0 64px 16px;
@@ -79,4 +80,50 @@ nav a:hover {
 
 li:nth-child(7) {
   margin-top: 64px;
+}
+
+header {
+  box-shadow: 0px 3px 5px 0px hsla(0,0%,0%,0.75);
+}
+
+.header-top {
+  display: flex;
+  margin: 16px 0 48px 32px;
+}
+
+.header-top form {
+  flex: 1;
+}
+
+.header-top input {
+  background-color: var(--light-gray);
+  border: none;
+  border-radius: 10px;
+  padding: 4px 0;
+  width: 85%;
+}
+
+.admin-controls {
+  display: flex;
+  margin-left: 32px;
+  gap: 24px;
+}
+
+.greeting {
+  flex: 1;
+}
+
+.user-button {
+  background-color: var(--light-blue);
+  border: none;
+  border-radius: 20px;
+  color: var(--main-white);
+  font-size: 1rem;
+  font-weight: bold;
+  max-height: 40px;
+  min-width: 100px;
+}
+
+.user-button:last-child {
+  margin-right: 64px;
 }
